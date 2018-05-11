@@ -11,16 +11,27 @@ SFDX plugin from Bob Buzzard
 `sfdx plugins:install bobbuzz`
 
 # Commands
-<!-- commands -->
-* [`bobbuzz bbuzz:gitstamp`](#bobbuzz-bbuzzgitstamp)
+* [`sfdx bbuzz:gitstamp`](#bobbuzz-bbuzzgitstamp)
 
-## `bobbuzz bbuzz:gitstamp`
+## `sfdx bbuzz:gitstamp`
 
-Writes the current Git commit id to a custom setting
+Writes the current Git commit id to a hierarchical custom setting. The custom setting information defined in the `sfdx-project.json` file as follows:
+
+```
+"plugins": {
+    "bb": {
+          "gitSetting" : {
+              "settingName" : "Git_Info__c",
+              "commitIdField" : "Commit_Id__c"
+          }
+    }
+}
+```
+where `settingName` defines the name of the custom setting (default is `Git_Info__c`) and `commitIdField` defines the custom setting field to write the commit id to (default is `Commit_Id__c`)
 
 ```
 USAGE
-  $ bobbuzz bbuzz:gitstamp
+  $ sfdx bbuzz:gitstamp
 
 OPTIONS
   -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
@@ -34,7 +45,6 @@ EXAMPLE
 ```
 
 _See code: [src/commands/bbuzz/gitstamp.ts](https://github.com/keirbowden/sfdx-bobbuzz/blob/v0.0.1/src/commands/bbuzz/gitstamp.ts)_
-<!-- commandsstop -->
 
 # License
 MIT
