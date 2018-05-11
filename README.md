@@ -10,6 +10,7 @@ SFDX plugin from Bob Buzzard
 # Installation
 `sfdx plugins:install bobbuzz`
 
+# Commands
 <!-- commands -->
 * [`bobbuzz bbuzz:gitstamp`](#bobbuzz-bbuzzgitstamp)
 
