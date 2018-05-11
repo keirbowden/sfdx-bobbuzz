@@ -8,7 +8,7 @@ SFDX plugin from Bob Buzzard
 [![License](https://img.shields.io/npm/l/bobbuzz.svg)](https://github.com/keirbowden/sfdx-bobbuzz/blob/master/package.json)
 
 # Installation
-sfdx plugins:install:bobbuzz
+`sfdx plugins:install bobbuzz`
 
 <!-- commands -->
 # Commands
