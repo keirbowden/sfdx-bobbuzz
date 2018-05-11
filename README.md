@@ -11,10 +11,9 @@ SFDX plugin from Bob Buzzard
 `sfdx plugins:install bobbuzz`
 
 <!-- commands -->
-# Commands
-* [`sfdx bbuzz:gitstamp`](#bobbuzz-bbuzzgitstamp)
+* [`bobbuzz bbuzz:gitstamp`](#bobbuzz-bbuzzgitstamp)
 
-## `sfdx bbuzz:gitstamp`
+## `bobbuzz bbuzz:gitstamp`
 
 Writes the current Git commit id to a custom setting
 
@@ -33,7 +32,7 @@ EXAMPLE
      Stamped the Git commit id in the org
 ```
 
-_See code: [src/commands/bbuzz/gitstamp.ts](https://github.com/keirbowden/sfdx-bobbuzz/blob/v0.0.0/src/commands/bbuzz/gitstamp.ts)_
+_See code: [src/commands/bbuzz/gitstamp.ts](https://github.com/keirbowden/sfdx-bobbuzz/blob/v0.0.1/src/commands/bbuzz/gitstamp.ts)_
 <!-- commandsstop -->
 
 # License
